@@ -25,5 +25,7 @@ volumes:
   size: 5Gi 
 
 properties:
+  MYSQL_PASSWORD_KEY: 
+    vault: MYSQL_PASSWORD_KEY
   IDE_PASSWORD_HASH: "appz:$2y$10$zDjdwKmNB6TvtSg8n6gnV.lY.9//9ISZz2.jgIuuAqWENABTpBbUC"
   revision : 16
