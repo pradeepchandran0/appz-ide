@@ -13,10 +13,11 @@ build:
 deploy:
   type: statefulset
   context: pradeepchandran0/DEV
+  resources: medium 
   replicas: 1
   port:
   - 80
-  - { port : 8080, protocol: TCP, name : webserver }
+  - 5000
   
 volumes:
 - claim: home
@@ -25,7 +26,5 @@ volumes:
   size: 5Gi 
 
 properties:
-  MYSQL_PASSWORD_KEY: 
-    vault: MYSQL_SPRINGBOOTWEB_PASSWORD
-  IDE_PASSWORD_HASH: "appz:$2y$10$zDjdwKmNB6TvtSg8n6gnV.lY.9//9ISZz2.jgIuuAqWENABTpBbUC"
-  revision : 16
+  IDE_PASSWORD_HASH: "appz:$2y$05$QRW3jng9SVBKKyLBgtMBre6WzjPDIwPhHnU6fgyTZAiBF5AelSruC"
+  revision : 01
