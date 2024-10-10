@@ -27,4 +27,4 @@ volumes:
 
 properties:
   IDE_PASSWORD_HASH: "appz:$2y$05$QRW3jng9SVBKKyLBgtMBre6WzjPDIwPhHnU6fgyTZAiBF5AelSruC"
-  revision : 01
+  revision : 02
